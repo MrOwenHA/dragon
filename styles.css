@@ -6,15 +6,17 @@ body {
     background-color: #0a0a23;
     color: #ffffff;
     padding: 10px;
+    font-size: 20pt;
   }
   
   #game {
-    max-width: 500px;
-    max-height: 400px;
+    max-width: 900px;
+    max-height: auto;
     background-color: #ffffff;
     color: #ffffff;
     margin: 30px auto 0px;
     padding: 10px;
+    font-size: 20pt;
   }
   
   #controls,
@@ -22,6 +24,7 @@ body {
     border: 1px solid #0a0a23;
     padding: 5px;
     color: #0a0a23;
+    font-size: 20pt;
   }
   
   #monsterStats {
@@ -30,10 +33,12 @@ body {
     padding: 5px;
     color: #ffffff;
     background-color: #c70d0d;
+    font-size: 20pt;
   }
   
   .stat {
     padding-right: 10px;
+    font-size: 20pt;
   }
   
   button {
@@ -42,4 +47,5 @@ body {
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c, #ffac33);
     border: 3px solid #feac32;
+    font-size: 20pt;
   }
