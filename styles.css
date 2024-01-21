@@ -1,10 +1,10 @@
 body {
-    background-color: #0a0a23;
+    background-color: darkblue;
   }
   
   #text {
-    background-color: #0a0a23;
-    color: #ffffff;
+    background-color: black;
+    color: white;
     padding: 10px;
     font-size: 20pt;
   }
@@ -12,8 +12,8 @@ body {
   #game {
     max-width: 900px;
     max-height: auto;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: white;
+    color: white;
     margin: 30px auto 0px;
     padding: 10px;
     font-size: 20pt;
@@ -21,19 +21,19 @@ body {
   
   #controls,
   #stats {
-    border: 1px solid #0a0a23;
+    border: 1px solid black;
     padding: 5px;
-    color: #0a0a23;
+    color: black;
     font-size: 20pt;
     text-align: center;
   }
   
   #monsterStats {
     display: none;
-    border: 1px solid #0a0a23;
+    border: 1px solid black;
     padding: 5px;
-    color: #ffffff;
-    background-color: #c70d0d;
+    color: white;
+    background-color: red;
     font-size: 20pt;
   }
   
@@ -44,9 +44,8 @@ body {
   
   button {
     cursor: pointer;
-    color: #0a0a23;
-    background-color: #feac32;
-    background-image: linear-gradient(#fecc4c, #ffac33);
-    border: 3px solid #feac32;
+    color: black;
+    background-color: yellow;
+    border: 3px solid black;
     font-size: 20pt;
   }
