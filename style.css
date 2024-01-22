@@ -40,7 +40,7 @@ button {
 }
 
 #monsterStats {
-  /* display: none; */
+  display: none;
   border: 3px solid black;
   border-radius: 10px;
   padding: 5px;
