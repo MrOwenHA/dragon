@@ -17,6 +17,8 @@ body {
 
 #stats,
 #controls {
+  background-color: cyan;
+  font-weight: bold;
   border: 3px solid black;
   border-radius: 10px;
   padding: 10px;
@@ -38,11 +40,11 @@ button {
 }
 
 #monsterStats {
-  display: none;
+  /* display: none; */
   border: 3px solid black;
   border-radius: 10px;
   padding: 5px;
-  color: black;
+  color: yellow;
   font-weight: bold;
   background-color: red;
   text-align: center;
