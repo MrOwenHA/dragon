@@ -112,10 +112,6 @@ function goStore() {
   update(locations[1]);
 }
 
-function goCave() {
-  update(locations[2]);
-}
-
 function buyHealth() {
   if (gold >= 10) {
     gold -= 10;
@@ -159,6 +155,42 @@ function sellWeapon() {
   }
 }
 
+function goCave() {
+  update(locations[2]);
+}
+
+function goFight() {
+  update(locations[3]);
+  monsterHealth = monsters[fighting].health;
+  monsterStats.style.display = "block";
+  monsterName.innerText = monsters[fighting].name;
+  monsterHealthText.innerText = monsterHealth;
+}
+
+function defeatMonster() {
+  gold += Math.floor(monsters[fighting].level * 6.7);
+  xp += monsters[fighting].level;
+  goldText.innerText = gold;
+  xpText.innerText = xp;
+  update(locations[4]);
+}
+
+function lose() {
+  update(locations[5]);
+}
+
+function winGame() {
+  update(locations[6]);
+}
+
+function easterEgg() {
+  update(locations[7]);
+}
+
+
+
+
+
 function fightSlime() {
   fighting = 0;
   goFight();
@@ -174,13 +206,7 @@ function fightDragon() {
   goFight();
 }
 
-function goFight() {
-  update(locations[3]);
-  monsterHealth = monsters[fighting].health;
-  monsterStats.style.display = "block";
-  monsterName.innerText = monsters[fighting].name;
-  monsterHealthText.innerText = monsterHealth;
-}
+
 
 function attack() {
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -218,21 +244,9 @@ function dodge() {
   text.innerText = "You dodge the attack from the " + monsters[fighting].name;
 }
 
-function defeatMonster() {
-  gold += Math.floor(monsters[fighting].level * 6.7);
-  xp += monsters[fighting].level;
-  goldText.innerText = gold;
-  xpText.innerText = xp;
-  update(locations[4]);
-}
 
-function lose() {
-  update(locations[5]);
-}
 
-function winGame() {
-  update(locations[6]);
-}
+
 
 function restart() {
   xp = 0;
@@ -246,9 +260,7 @@ function restart() {
   goTown();
 }
 
-function easterEgg() {
-  update(locations[7]);
-}
+
 
 function pickTwo() {
   pick(2);
